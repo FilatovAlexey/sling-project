@@ -1,135 +1,131 @@
 @import "breakpoints";
 
 header {
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    background-color: #fff;
-    
-    nav {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px;
+
+    .nav-logo {
+      a {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+      }
+    }
+
+    .nav-links {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      height: 100%;
-      padding: 0 40px;
-      
-      .nav-logo {
+      justify-content: flex-end;
+
+      li {
+        list-style: none;
+        margin-left: 15px;
+
         a {
-          font-size: 24px;
+          font-size: 18px;
           font-weight: bold;
           color: #333;
           text-decoration: none;
+
+          &:hover {
+            color: #209cee;
+          }
         }
       }
-      
-      .nav-links {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        
-        li {
-          list-style: none;
-          margin-left: 15px;
-          
-          a {
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-            text-decoration: none;
-            
-            &:hover {
-              color: #209CEE;
-            }
+    }
+
+    .nav-connection {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-tel {
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .nav-toggle {
+      display: none;
+      cursor: pointer;
+      span {
+        display: block;
+        height: 2px;
+        width: 25px;
+        background-color: #333;
+        margin-bottom: 5px;
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      &.active {
+        span {
+          &:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 5px);
           }
+          &:nth-child(2) {
+            display: none;
+          }
+          &:nth-child(3) {
+            transform: rotate(45deg) translate(0px, 0px);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $md) {
+    nav {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+
+        li {
+          border-top: 1px solid #ccc;
+          padding: 10px 0;
+          margin: 0;
+          width: 100%;
+          text-align: center;
+
+          &:last-child {
+            border-bottom: 1px solid #ccc;
+          }
+        }
+
+        a {
+          font-size: 24px;
+        }
+        &.active {
+          display: flex;
         }
       }
 
       .nav-connection {
-        display: flex;
-        align-items: center;
-      }
-
-      .nav-tel {
-        font-weight: bold;
-        margin-right: 20px;
-      }
-      
-      .nav-toggle {
         display: none;
-        cursor: pointer;
-        span {
-          display: block;
-          height: 2px;
-          width: 25px;
-          background-color: #333;
-          margin-bottom: 5px;
-          position: relative;
-          transition: transform 0.3s ease-in-out;
-        }
-        
-        &.active {
-          span {
-            &:nth-child(1) {
-              transform: rotate(-45deg) translate(-5px, 5px);
-            }
-            &:nth-child(2) {
-              display: none;            
-            }
-            &:nth-child(3) {
-              transform: rotate(45deg) translate(0px, 0px);
-            }
-          }
-        }
       }
-    }
-    
-    @media (max-width: $md) {
-      nav {
-        .nav-links {
-          display: none;
-          flex-direction: column;
-          position: absolute;
-          top: 60px;
-          left: 0;
-          width: 100%;
-          background-color: #fff;
-          padding: 20px;
-          box-sizing: border-box;
 
-        
-          
-          li {
-            border-top: 1px solid #ccc;
-            padding: 10px 0;
-            margin: 0;
-            width: 100%;
-            text-align: center;
-
-            &:last-child {
-              border-bottom: 1px solid #ccc
-            }
-          }
-          
-          a {
-            font-size: 24px;
-          }
-          &.active {
-            display: flex;
-          }
-        }
-
-        .nav-connection {
-          display: none;
-        }
-        
-        .nav-toggle {
-          display: block;
-        }
-        
+      .nav-toggle {
+        display: block;
       }
     }
   }
-  
+}

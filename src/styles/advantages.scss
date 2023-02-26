@@ -1,0 +1,65 @@
+@import "breakpoints";
+
+.advantages-backgroud {
+  background-color: #f8f8f8;
+}
+
+.advantages-container {
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  padding: 20px;
+  flex: 1;
+}
+
+.advantages-item_title-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.advantages-item_icon {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  background-size: cover;
+}
+
+.quality {
+  background-image: url("../images/quality.png");
+}
+
+.reliability {
+  background-image: url("../images/reliability.png");
+}
+
+.availability {
+  background-image: url("../images/availability.png");
+}
+
+.approach {
+  background-image: url("../images/approach.png");
+}
+
+.advantages-item_title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.advantages-item_desc {
+  font-size: 20px;
+  color: #717070;
+}
+
+@media (max-width: $md) {
+  .advantages-container {
+    flex-direction: column;
+  }
+}

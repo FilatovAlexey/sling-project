@@ -1,110 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<55b7ad13-8452-4aaf-ac1d-bd28e98b2bde>"
+      type="text/javascript"
+    ></script>
+    <title>Продажа строп в Арзамасе</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="nav-logo">
+            <a href="index.html">
+              <div class="logo-img"></div>
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Продукция</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#info">Контакты</a></li>
+          </ul>
+          <div class="nav-connection">
+            <div class="tel nav-tel">
+              <a href="tel:+7(987)746-74-48" itemprop="telephone"
+                >+7 (987) 746-74-48</a
+              >
+            </div>
+            <button class="button modal-button">Заказать звонок</button>
+          </div>
+          <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+    </div>
 
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<55b7ad13-8452-4aaf-ac1d-bd28e98b2bde>" type="text/javascript"></script>
-  <title>Продажа строп в Арзамасе</title>
-</head>
-<body>
-  <div class="container">
-    <header>
-    <nav>
-      <div class="nav-logo">
-        <a href="#">
-          <div class="logo-img"></div>
-        </a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Продукция</a></li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <div class="nav-connection">
-        <div class="tel nav-tel">
-          <a href="tel:+7(987)746-74-48" itemprop="telephone">+7 (987) 746-74-48</a>
+    <section class="background">
+      <div class="container swiper-height">
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-left">
+                <h1 class="swiper-title">Грузоподъёмное оборудование</h1>
+                <button class="second-button modal-button">
+                  Заказать звонок
+                </button>
+              </div>
+              <div class="swiper-right">
+                <div class="swiper-image crane"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-left">
+                <h1 class="swiper-title">Стяжные ремни</h1>
+                <button class="second-button modal-button">
+                  Заказать звонок
+                </button>
+              </div>
+              <div class="swiper-right">
+                <div class="swiper-image belts"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-left">
+                <h1 class="swiper-title">Буксировочные тросы</h1>
+                <button class="second-button modal-button">
+                  Заказать звонок
+                </button>
+              </div>
+              <div class="swiper-right">
+                <div class="swiper-image rope"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <button class='button modal-button'>
-          Заказать звонок
-        </button> 
       </div>
-      <div class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+    </section>
+    <div class="advantages-backgroud">
+      <section class="container">
+        <div class="advantages-container">
+          <div class="advantages-item">
+            <div class="advantages-item_title-container">
+              <div class="advantages-item_icon quality"></div>
+              <h4 class="advantages-item_title">Качество</h4>
+            </div>
+            <div class="advantages-item_desc">
+              Наша компания использует только высококачественные материалы и
+              технологии для производства строп, стяжных ремней и буксировочных
+              тросов, что обеспечивает их надежность и безопасность
+            </div>
+          </div>
+          <div class="advantages-item">
+            <div class="advantages-item_title-container">
+              <div class="advantages-item_icon reliability"></div>
+              <h4 class="advantages-item_title">Надежность</h4>
+            </div>
+            <div class="advantages-item_desc">
+              Мы предлагаем продукцию, которая прошла все необходимые тесты и
+              сертификации, что подтверждает ее соответствие международным
+              стандартам.
+            </div>
+          </div>
+        </div>
+        <div class="advantages-container">
+          <div class="advantages-item">
+            <div class="advantages-item_title-container">
+              <div class="advantages-item_icon availability"></div>
+              <h4 class="advantages-item_title">Доступность</h4>
+            </div>
+            <div class="advantages-item_desc">
+              Мы предлагаем широкий ассортимент продукции по доступной цене, что
+              позволяет нашим клиентам выбирать оптимальное решение для своих
+              задач и требований.
+            </div>
+          </div>
+          <div class="advantages-item">
+            <div class="advantages-item_title-container">
+              <div class="advantages-item_icon approach"></div>
+              <h4 class="advantages-item_title">Индивидуальный подход</h4>
+            </div>
+            <div class="advantages-item_desc">
+              Мы готовы предложить индивидуальный подход к каждому клиенту и
+              разработать решение, которое наилучшим образом соответствует его
+              потребностям и бюджету, предоставив при этом высокий уровень
+              сервиса.
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="logo-img"></div>
+          <div class="socials">
+            <a
+              class="telegram"
+              href="https://vk.com/raby1999"
+              aria-label="Наш Telegram"
+            ></a>
+            <a
+              class="whatsapp"
+              href="https://vk.com/raby1999"
+              aria-label="Наш Whatsapp"
+            ></a>
+            <a
+              class="viber"
+              href="https://vk.com/raby1999"
+              aria-label="Наш Viber"
+            ></a>
+          </div>
+        </div>
+        <div class="footer-contacts-container">
+          <div class="footer-connection">
+            <a name="info" class="footer-title">Свяжитесь с нами</a>
+            <div class="tel footer-item">
+              <a href="tel:+7(987)746-74-48" itemprop="telephone"
+                >+7 (987) 746-74-48</a
+              >
+            </div>
+            <div class="tel footer-item">
+              <a href="mailto:sd@strop-arz.ru">sd@strop-arz.ru</a>
+            </div>
+          </div>
+          <div class="footer-address">
+            <div class="footer-title">Адрес и режим работы</div>
+            <div class="footer-item">город Арзамас ул. Шер 1</div>
+            <div class="footer-item">Понедельник-Суббота с 08:00 до 17:00</div>
+            <div class="footer-item">Воскресенье - выходной</div>
+          </div>
+          <div class="footer-map">
+            <div class="map" id="map"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 class="modal-title">Оставьте свои данные и мы с вами свяжемся</h2>
+          <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+          <label for="name-input" class="name-input-container">
+            <input
+              type="text"
+              id="name-input"
+              class="modal-input"
+              placeholder="&nbsp;"
+            />
+            <span class="name-input-label">Ваше имя</span>
+            <span class="input-focus"></span>
+          </label>
+          <label for="name-input" class="name-input-container tel-container">
+            <input
+              type="text"
+              id="name-input"
+              class="modal-input"
+              placeholder="&nbsp;"
+              name="phone"
+            />
+            <span class="name-input-label">Ваш номер</span>
+            <span class="input-focus"></span>
+          </label>
+          <div class="checkbox-container">
+            <div class="checkbox-wrapper-1">
+              <input
+                id="modal-check"
+                class="substituted"
+                type="checkbox"
+                aria-hidden="true"
+                checked
+                disabled
+              />
+              <label for="modal-check"
+                >согласен на обработку персональных данных в соответствии с
+                <a href="privacy.html" class="modal-link">условиями</a></label
+              >
+            </div>
+          </div>
+          <button class="button send-button">Заказать звонок</button>
+        </div>
       </div>
-    </nav>
-  </header>
-</div>
-  
-<section class="background">1231232</section>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<div class="container">
-<footer class='footer'>
-  <div class="footer-top">
-    <div class="logo-img"></div>
-    <div class="socials">
-      <a class="telegram" href="https://vk.com/raby1999" aria-label="Наш Telegram"></a>
-      <a class="whatsapp" href="https://vk.com/raby1999" aria-label="Наш Whatsapp"></a>
-      <a class="viber" href="https://vk.com/raby1999" aria-label="Наш Viber"></a>
-    </div>
-  </div>
-  <div class="footer-contacts-container">
-    <div class="footer-connection">
-      <div class="footer-title">Свяжитесь с нами</div>
-      <div class="tel footer-item">
-        <a href="tel:+7(987)746-74-48" itemprop="telephone">+7 (987) 746-74-48</a>
-      </div>
-      <div class="tel footer-item"><a href="mailto:sd@strop-arz.ru">sd@strop-arz.ru</a></div>
-    </div>
-    <div class="footer-address">
-      <div class="footer-title">Адрес и режим работы</div>
-      <div class="footer-item">
-      город Арзамас ул. Шер 1
-      </div>
-      <div class="footer-item">
-        Понедельник-Суббота с 08:00 до 17:00
-      </div>
-      <div class="footer-item">
-        Воскресенье - выходной
-      </div>
-    </div>
-    <div class="footer-map">
-      <div class="map" id="map"></div>
-    </div>
-  </div>
-</footer>
-</div>
-<div class="modal-overlay">
-  <div class="modal">
-    <div class="modal-header">
-      <h2 class="modal-title">Оставьте свои данные и мы с вами свяжемся</h2>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <label for="name-input" class="name-input-container">
-        <input type="text" id="name-input" class="modal-input" placeholder="&nbsp;">
-        <span class="name-input-label">Ваше имя</span>
-        <span class="input-focus"></span>
-      </label>
-      <label for="name-input" class="name-input-container tel-container">
-        <input type="text" id="name-input" class="modal-input" placeholder="&nbsp;" name="phone">
-        <span class="name-input-label">Ваш номер</span>
-        <span class="input-focus"></span>
-      </label>
-      <button class='button send-button'>
-        Заказать звонок
-      </button> 
-    </div>
-  </div>
-</div>
-
-</body>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 7000,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
 </html>

@@ -1,74 +1,70 @@
 @import "breakpoints";
 
 .footer {
-    padding: 20px 40px;
-    color: #333
+  padding: 20px 40px;
+  color: #333;
 }
 
 .footer-top {
-    display: flex;
-    justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .socials {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .icon {
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    margin: 0 10px
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin: 0 10px;
 }
 
 .telegram {
   @extend .icon;
-  background-image: url('../images/telegram.svg');   
+  background-image: url("../images/telegram.svg");
 }
 
 .whatsapp {
   @extend .icon;
-  background-image: url('../images/whatsapp.svg');   
+  background-image: url("../images/whatsapp.svg");
 }
 
 .viber {
-    @extend .icon;
-    background-image: url('../images/viber.svg');   
-  }
+  @extend .icon;
+  background-image: url("../images/viber.svg");
+}
 
 .footer-contacts-container {
-    @extend .footer-top;
-    margin-top: 40px;
+  @extend .footer-top;
+  margin-top: 40px;
 }
 
 .footer-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .footer-item {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .map {
-    height: 300px;
-    width: 300px;
+  height: 300px;
+  width: 300px;
 }
 
-
-
-
-
-  @media (max-width: $md) {
-    .footer-top {
-        flex-direction: column;
-    } 
-
-    .socials {
-        margin-top: 15px;
-    }
+@media (max-width: $md) {
+  .footer-top {
+    flex-direction: column;
   }
 
+  .socials {
+    margin-top: 15px;
+  }
+}
