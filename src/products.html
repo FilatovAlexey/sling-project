@@ -30,7 +30,7 @@
             </a>
           </div>
           <ul class="nav-links">
-            <li><a href="products.html">Продукция</a></li>
+            <li><a href="#">Продукция</a></li>
             <li><a href="delivery.html">Доставка и оплата</a></li>
             <li><a href="#info">Контакты</a></li>
           </ul>
@@ -50,100 +50,36 @@
         </nav>
       </header>
     </div>
-
-    <section class="background">
-      <div class="container swiper-height">
-        <div class="swiper-container mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper-left">
-                <h1 class="swiper-title">Грузоподъёмное оборудование</h1>
-                <button class="second-button modal-button">
-                  Заказать звонок
-                </button>
-              </div>
-              <div class="swiper-right">
-                <div class="swiper-image crane"></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-left">
-                <h1 class="swiper-title">Стяжные ремни</h1>
-                <button class="second-button modal-button">
-                  Заказать звонок
-                </button>
-              </div>
-              <div class="swiper-right">
-                <div class="swiper-image belts"></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-left">
-                <h1 class="swiper-title">Буксировочные тросы</h1>
-                <button class="second-button modal-button">
-                  Заказать звонок
-                </button>
-              </div>
-              <div class="swiper-right">
-                <div class="swiper-image rope"></div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+    <div class="container">
+      <h1 class="products-title">
+        Изготовим и доставим широкий спектр строп, ремней, тросов и
+        грузозахватных приспособлений.
+      </h1>
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-img product-strop"></div>
+          <h4 class="card-title">Текстильные стропы</h4>
+        </div>
+        <div class="card">
+          <div class="card-img product-belt"></div>
+          <h4 class="card-title">Стяжные ремни</h4>
+        </div>
+        <div class="card">
+          <div class="card-img product-ev"></div>
+          <h4 class="card-title">Буксировочные тросы</h4>
         </div>
       </div>
-    </section>
-    <div class="advantages-backgroud">
-      <section class="container">
-        <div class="advantages-container">
-          <div class="advantages-item">
-            <div class="advantages-item_title-container">
-              <div class="advantages-item_icon quality"></div>
-              <h4 class="advantages-item_title">
-                Изготовление по индивидуальным требованиям
-              </h4>
-            </div>
-            <div class="advantages-item_desc">
-              Мы можем изготовить заказанные вами нестандартные изделия за
-              максимум два рабочих дня, обеспечивая быструю обработку заказа.
-            </div>
-          </div>
-          <div class="advantages-item">
-            <div class="advantages-item_title-container">
-              <div class="advantages-item_icon reliability"></div>
-              <h4 class="advantages-item_title">Надежность</h4>
-            </div>
-            <div class="advantages-item_desc">
-              Наши изделия прошли тесты и сертификацию в соответствии с
-              международными стандартами, гарантируя их качество и надежность.
-            </div>
-          </div>
-        </div>
-        <div class="advantages-container">
-          <div class="advantages-item">
-            <div class="advantages-item_title-container">
-              <div class="advantages-item_icon availability"></div>
-              <h4 class="advantages-item_title">Гибкий график работы</h4>
-            </div>
-            <div class="advantages-item_desc">
-              Наше производство работает в выходные, а ваш персональный менеджер
-              всегда доступен для связи.
-            </div>
-          </div>
-          <div class="advantages-item">
-            <div class="advantages-item_title-container">
-              <div class="advantages-item_icon approach"></div>
-              <h4 class="advantages-item_title">Индивидуальный подход</h4>
-            </div>
-            <div class="advantages-item_desc">
-              Мы готовы предоставить персонализированный подход к вашим
-              потребностям и бюджету, обеспечивая высокий уровень сервиса.
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
+    <div class="container">
+      <div class="products-call-container">
+        <div class="products-call-desc">
+          Сообщите нам список продукции и нужное количество, и мы рассчитаем
+          стоимость и предложим вам выгодные условия сотрудничества.
+        </div>
+        <button class="button modal-button">Заказать звонок</button>
+      </div>
+    </div>
+
     <div class="container">
       <footer class="footer">
         <div class="footer-top">
@@ -238,20 +174,5 @@
         </div>
       </div>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        autoplay: {
-          delay: 7000,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
   </body>
 </html>

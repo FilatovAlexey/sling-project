@@ -20,6 +20,14 @@ module.exports = {
       template: path.join(__dirname, "src", "privacy.html"),
       filename: "privacy.html",
     }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, "src", "products.html"),
+      filename: "products.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, "src", "delivery.html"),
+      filename: "delivery.html",
+    }),
     new FileManagerPlugin({
       events: {
         onStart: {
