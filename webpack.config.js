@@ -28,6 +28,7 @@ module.exports = {
       template: path.join(__dirname, "src", "delivery.html"),
       filename: "delivery.html",
     }),
+
     new FileManagerPlugin({
       events: {
         onStart: {

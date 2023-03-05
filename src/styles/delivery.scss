@@ -1,0 +1,13 @@
+.delivery-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.delivery-done {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-image: url("../images/done.svg");
+  margin-right: 15px;
+}
