@@ -64,9 +64,15 @@
           <div class="card-img product-belt"></div>
           <h4 class="card-title">Стяжные ремни</h4>
         </div>
+      </div>
+      <div class="cards-container">
         <div class="card">
           <div class="card-img product-ev"></div>
           <h4 class="card-title">Буксировочные тросы</h4>
+        </div>
+        <div class="card">
+          <div class="card-img product-din"></div>
+          <h4 class="card-title">Динамическиe стропы</h4>
         </div>
       </div>
     </div>
@@ -152,44 +158,78 @@
           <button class="modal-close">&times;</button>
         </div>
         <div class="modal-body">
-          <label for="name-input" class="name-input-container">
-            <input
-              type="text"
-              id="name-input"
-              class="modal-input"
-              placeholder="&nbsp;"
-            />
-            <span class="name-input-label">Ваше имя</span>
-            <span class="input-focus"></span>
-          </label>
-          <label for="name-input" class="name-input-container tel-container">
-            <input
-              type="text"
-              id="name-input"
-              class="modal-input"
-              placeholder="&nbsp;"
-              name="phone"
-            />
-            <span class="name-input-label">Ваш номер</span>
-            <span class="input-focus"></span>
-          </label>
-          <div class="checkbox-container">
-            <div class="checkbox-wrapper-1">
+          <form
+            action="https://postmail.invotes.com/send"
+            method="post"
+            id="email_form"
+          >
+            <label for="name-input" class="name-input-container">
               <input
-                id="modal-check"
-                class="substituted"
-                type="checkbox"
-                aria-hidden="true"
-                checked
-                disabled
+                name="text"
+                placeholder=""
+                type="text"
+                id="name-input"
+                class="modal-input"
               />
-              <label for="modal-check"
-                >согласен на обработку персональных данных в соответствии с
-                <a href="privacy.html" class="modal-link">условиями</a></label
-              >
+              <span class="name-input-label">Ваше имя</span>
+              <span class="input-focus"></span>
+            </label>
+            <input
+              type="hidden"
+              name="access_token"
+              value="nrhyypdu2ko93er0s2xkg9q2"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="Письмо с сайта strop-arz.org"
+            />
+            <input
+              type="hidden"
+              name="success_url"
+              value=".?message=Email+Successfully+Sent%21&isError=0"
+            />
+            <input
+              type="hidden"
+              name="error_url"
+              value=".?message=Email+could+not+be+sent.&isError=1"
+            />
+            <label for="name-input" class="name-input-container tel-container">
+              <input
+                type="text"
+                id="name-input"
+                class="modal-input"
+                type="text"
+                name="extra_phone_number"
+                placeholder=""
+              />
+              <span class="name-input-label">Ваш номер</span>
+              <span class="input-focus"></span>
+            </label>
+            <div class="checkbox-container">
+              <div class="checkbox-wrapper-1">
+                <input
+                  id="modal-check"
+                  class="substituted"
+                  type="checkbox"
+                  aria-hidden="true"
+                  checked
+                  disabled
+                />
+                <label for="modal-check"
+                  >согласен на обработку персональных данных в соответствии с
+                  <a href="privacy.html" class="modal-link">условиями</a></label
+                >
+              </div>
             </div>
-          </div>
-          <button class="button send-button">Заказать звонок</button>
+
+            <input
+              id="submit_form"
+              class="button send-button"
+              type="submit"
+              value="Заказать звонок"
+            />
+          </form>
         </div>
       </div>
     </div>
