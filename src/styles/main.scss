@@ -132,6 +132,18 @@ div {
   background-image: url("../images/belts.png");
 }
 
+.chain {
+  width: 300px;
+  height: 330px;
+  background-image: url("../images/chain.png");
+}
+
+.sling {
+  width: 340px;
+  height: 180px;
+  background-image: url("../images/sling.png");
+}
+
 .rope {
   width: 350px;
   height: 235px;
@@ -168,4 +180,11 @@ div {
   .swiper-image {
     display: none;
   }
+
+  .swiper-left {
+    margin-right: 0;
+  }
+   .swiper-title {
+    font-size: 30px;
+   }
 }

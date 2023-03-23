@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -19,6 +20,7 @@
   padding: 20px;
   flex: 0.33;
   height: 400px;
+  min-width: 280px;
   margin: 20px;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   text-align: center;
@@ -57,6 +59,10 @@
   background-image: url("../images/product-din.png");
 }
 
+.product-chain {
+  background-image: url("../images/product-chain.png");
+}
+
 .products-call-container {
   display: flex;
   width: 100%;
@@ -81,12 +87,16 @@
   }
 
   .card {
-    width: 100%;
-    flex: 1;
+    padding: 0;
   }
   .products-call-desc {
     flex: 1;
     margin-right: 0;
     padding-bottom: 30px;
+  }
+
+  .products-title { 
+    width: 100%;
+    font-size: 30px;
   }
 }

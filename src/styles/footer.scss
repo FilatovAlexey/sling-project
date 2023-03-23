@@ -74,16 +74,6 @@
   margin: 0 10px;
 }
 
-@media (max-width: $md) {
-  .footer-top {
-    flex-direction: column;
-  }
-
-  .socials {
-    margin-top: 15px;
-  }
-}
-
 .offer {
   padding-top: 20px;
   width: 100%;
@@ -102,3 +92,30 @@
     margin-right: 10px;
   }
 }
+
+
+@media (max-width: $md) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .socials {
+    margin-top: 15px;
+  }
+
+  .footer {
+    padding: 20px 0;
+   
+  }
+  
+}
+
+
+@media (max-width: $sm) {
+
+  .agreement {
+    flex-direction: column;
+  }
+  
+}
+
